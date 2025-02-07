@@ -31,6 +31,19 @@
             width: 100%;
 
         }
+
+        .bg-image2 {
+            background-image: url(./images/cute-pet-mid.png);
+            background-repeat: no-repeat;
+            background-position: bottom right;
+
+
+
+        }
+
+        .bg-image2 img {
+            width: 50%;
+        }
     </style>
 </head>
 
@@ -42,7 +55,7 @@
 
         <!-- navbar main container -->
         <div
-            class="navbar flex justify-between md:justify-between lg:justify-between items-center   mx-auto max-w-screen-2xl">
+            class="navbar flex justify-between md:justify-between lg:justify-between items-center mx-auto max-w-screen-2xl">
 
             <!-- navbar icon section left -->
             <div>
@@ -71,7 +84,7 @@
 
 
             <!-- navbar login register section -->
-            <div class="hidden md:flex lg:flex  justify-center items-center gap-4">
+            <div class="hidden md:flex lg:flex  justify-center items-center gap-4 lg:flex-col xl:flex-row">
                 <div class="flex items-center justify-center gap-2">
                     <button class="flex items-center">
                         <div class="indicator ">
@@ -113,9 +126,10 @@
 
     <!-- main section -->
     <main>
+
         <!-- Banner Section -->
-        <section class="mb-[-250px] max-w-screen-2xl mx-auto 
-        bg-image1 h-[750px] bg-no-repeat bg-right bg-contain 0 border-2 border-cyan-950">
+        <section class="mb-[-250px] lg:mb-[180px] max-w-screen-2xl mx-auto 
+        bg-image1 h-[750px] bg-no-repeat bg-right bg-contain my-8 md:my-14 lg:my-20 ">
             <!-- banner texts -->
             <div class="space-y-4 flex flex-col items-start mx-2">
                 <h1 class="font-AD text-3xl md:text-5xl lg:text-6xl animate-text animate-bounce animate-ease-linear  ">
@@ -127,14 +141,216 @@
                     class="font-sora text-sm md:text-lg lg:text-xl border-[#FFDC26] border-2 bg-[#FFDC26] rounded-md px-6 py-1 ">Find
                     a pet</button>
             </div>
+        </section>
 
+        <!-- catagories section 1 -->
+        <section class=" my-10 max-w-screen-2xl mx-auto  ">
+
+            <!-- catagories header -->
+            <h1 class="font-AD lg:text-4xl md:text-2xl text-xl mx-2">Browse By Categories</h1>
+
+            <!-- catagories content container -->
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 lg:mt-12 md:mt-10 md:mx-2 mt-4 gap-2 mx-2 ">
+
+
+                <!-- catagories card section -->
+
+                <!-- card1 -->
+                <div class="bg-[#F9DF8A] flex flex-col items-center py-5 rounded-lg 
+                lg:w-5/6 gap-10 h-[222px] ">
+
+                    <!-- card image section -->
+                    <div class="  bg-white rounded-full ">
+                        <div class="w-10 my-4 mx-4 rounded-full">
+                            <img src="./images/dog-cartoon.png " />
+                        </div>
+                    </div>
+                    <!-- card text section -->
+                    <div class="flex flex-col items-center gap-1">
+                        <h4 class="font-AD text-lg md:text-xl lg:text-xl">Dog</h4>
+                        <p class="font-sora text-sm md:text-base lg:text-base">3 items</p>
+                    </div>
+                </div>
+                <!-- card2 -->
+                <div class="bg-[#F9DF8A] flex flex-col items-center py-5 rounded-lg 
+                lg:w-5/6 gap-10 h-[222px] ">
+
+                    <!-- card image section -->
+                    <div class="  bg-white rounded-full ">
+                        <div class="w-10 my-4 mx-4 rounded-full">
+                            <img src="./images/fish-cartoon.png " />
+                        </div>
+                    </div>
+                    <!-- card text section -->
+                    <div class="flex flex-col items-center gap-1">
+                        <h4 class="font-AD text-lg md:text-xl lg:text-xl">Fish</h4>
+                        <p class="font-sora text-sm md:text-base lg:text-base">3 items</p>
+                    </div>
+                </div>
+                <!-- card3 -->
+                <div class="bg-[#F9DF8A] flex flex-col items-center py-5 rounded-lg 
+                lg:w-5/6 gap-10 h-[222px] ">
+
+                    <!-- card image section -->
+                    <div class="  bg-white rounded-full ">
+                        <div class="w-10 my-4 mx-4 rounded-full">
+                            <img src="./images/cat-cartoon.png " />
+                        </div>
+                    </div>
+                    <!-- card text section -->
+                    <div class="flex flex-col items-center gap-1">
+                        <h4 class="font-AD text-lg md:text-xl lg:text-xl">Cat</h4>
+                        <p class="font-sora text-sm md:text-base lg:text-base">3 items</p>
+                    </div>
+                </div>
+                <!-- card4 -->
+                <div class="bg-[#F9DF8A] flex flex-col items-center py-5 rounded-lg 
+                lg:w-5/6 gap-10 h-[222px] ">
+
+                    <!-- card image section -->
+                    <div class="  bg-white rounded-full ">
+                        <div class="w-10 my-4 mx-4 rounded-full">
+                            <img src="./images/bird-cartoon.png " />
+                        </div>
+                    </div>
+                    <!-- card text section -->
+                    <div class="flex flex-col items-center gap-1">
+                        <h4 class="font-AD text-lg md:text-xl lg:text-xl">Birds</h4>
+                        <p class="font-sora text-sm md:text-base lg:text-base">3 items</p>
+                    </div>
+                </div>
+                <!-- card5 -->
+                <div class="bg-[#F9DF8A] flex flex-col items-center py-5 rounded-lg 
+                lg:w-5/6 gap-10 h-[222px] ">
+
+                    <!-- card image section -->
+                    <div class="  bg-white rounded-full ">
+                        <div class="w-10 my-4 mx-4 rounded-full">
+                            <img src="./images/mouse-cartoon.png " />
+                        </div>
+                    </div>
+                    <!-- card text section -->
+                    <div class="flex flex-col items-center gap-1">
+                        <h4 class="font-AD text-lg md:text-xl lg:text-xl">Small Pet</h4>
+                        <p class="font-sora text-sm md:text-base lg:text-base">3 items</p>
+                    </div>
+                </div>
+                <!-- card6 -->
+                <div class="bg-[#F9DF8A] flex flex-col items-center py-5 rounded-lg 
+                lg:w-5/6 gap-10 h-[222px] ">
+
+                    <!-- card image section -->
+                    <div class="  bg-white rounded-full ">
+                        <div class="w-10 my-4 mx-4 rounded-full">
+                            <img src="./images/rabbit-cartoon.png " />
+                        </div>
+                    </div>
+                    <!-- card text section -->
+                    <div class="flex flex-col items-center gap-1">
+                        <h4 class="font-AD text-lg md:text-xl lg:text-xl">Rabit</h4>
+                        <p class="font-sora text-sm md:text-base lg:text-base">3 items</p>
+                    </div>
+                </div>
+
+
+            </div>
 
 
         </section>
-        <!-- catagories section -->
-        <section class="max-w-screen-2xl mx-auto border-2 border-red-600">
 
+        <!-- catagories section 2 -->
+        <section class="lg:bg-[#FFF9F4] md:bg-[#FFF9F4]">
+
+            <!-- main container -->
+            <div class=" mb-4 max-w-screen-2xl mx-auto md:mx-auto lg:mx-auto lg:pt-24 md:pt-20  ">
+
+                <!-- catagories header -->
+
+                <h1 class="font-AD hidden md:flex lg:flex lg:text-4xl md:text-2xl text-xl border-1">Trending Pet
+                    Products
+                </h1>
+
+                <h1 class="font-AD flex md:hidden lg:hidden lg:text-4xl md:text-2xl text-xl mx-2">Browse By Catagories
+                </h1>
+
+
+
+                <!-- catagories content container -->
+
+                <div class="flex lg:gap-6 lg:pt-12 ">
+
+                    <!-- feature card -->
+
+                    <div class="bg-[#F9DF8A] lg:h-[25rem] lg:w-[29rem]
+                    border-2 border-red-600 flex-4  ">
+
+                        <!-- feature text section -->
+                        <div class="flex flex-col items-start lg:gap-5 px-5 py-5">
+                            <h1 class="font-AD lg:text-4xl">T-Shirt For Dogs</h1>
+                            <p class="font-sora lg:text-base">Discover a world of treats,toys, and <br>
+                                essentials handpicked for
+                            </p>
+                            <button
+                                class="font-sora lg:text-xl btn btn-active btn-primary bg-white border-white text-black font-semibold hover:bg-yellow-300 hover:border-yellow-300">Shop
+                                Now</button>
+                        </div>
+
+                        <!-- feature image section -->
+                        <div class="relative -top-25 left-55">
+                            <div class="-mb-10">
+                                <img class="h-72" src="./images/cute-pet-mid.png" alt="">
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <!-- shop section -->
+                    <div class="grid lg:grid-cols-3 lg:h-[400px] lg:w-[1050px] lg:gap-4 border-2 border-green-800 
+                     ">
+
+                        <div class="bg-white lg:w-[335px] lg:h-[118px]  rounded-lg shadow-sm">
+                        </div>
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
         </section>
+
+
+
+
     </main>
 
 
