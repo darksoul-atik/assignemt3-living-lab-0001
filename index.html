@@ -24,37 +24,12 @@
 
         .bg-image1 {
             background-image: url(./images/cat-big.png);
+
         }
 
+        .bg-image1 img {
+            width: 100%;
 
-
-        @keyframes bounceColorSize {
-
-            0%,
-            100% {
-                transform: translateY(0);
-                color: black;
-                font-size: 2rem;
-
-            }
-
-            50% {
-                transform: translateY(-15px);
-                color: #ff2680;
-                font-size: 2.5rem;
-
-            }
-        }
-
-        .animate-bounce-color-size {
-            animation: bounceColorSize 1s ease-in-out infinite;
-            transition: color 0.5s ease, font-size 0.5s ease;
-        }
-
-        /* Hover effects */
-        .animate-bounce-color-size:hover {
-            color: #ff2680;
-            font-size: 2.5rem;
         }
     </style>
 </head>
@@ -139,11 +114,11 @@
     <!-- main section -->
     <main>
         <!-- Banner Section -->
-        <section class="max-w-screen-2xl mx-auto 
-        bg-image1 h-[750px] bg-no-repeat bg-right bg-contain my-8 md:my-14 lg:my-20">
+        <section class="mb-[-250px] max-w-screen-2xl mx-auto 
+        bg-image1 h-[750px] bg-no-repeat bg-right bg-contain 0 border-2 border-cyan-950">
             <!-- banner texts -->
             <div class="space-y-4 flex flex-col items-start mx-2">
-                <h1 class="font-AD text-3xl md:text-5xl lg:text-6xl animate-text animate-bounce animate-ease-linear ">
+                <h1 class="font-AD text-3xl md:text-5xl lg:text-6xl animate-text animate-bounce animate-ease-linear  ">
                     Pamper Your Pet,<br> Because They
                     Deserve the Best</h1>
                 <p class="font-sora text-base md:text-lg lg:text-xl">Discover a world of treats, toys, and essentials
@@ -153,11 +128,11 @@
                     a pet</button>
             </div>
 
-            <!-- banner background Image section -->
 
-            <!-- <div class="border-2 border-red-500 flex items-end">
-                <img src="./images/cat-big.png" alt="">
-            </div> -->
+
+        </section>
+        <!-- catagories section -->
+        <section class="max-w-screen-2xl mx-auto border-2 border-red-600">
 
         </section>
     </main>
