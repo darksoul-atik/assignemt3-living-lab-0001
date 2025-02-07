@@ -21,18 +21,53 @@
         .font-AD {
             font-family: "ADLaM Display", serif;
         }
+
+        .bg-image1 {
+            background-image: url(./images/cat-big.png);
+        }
+
+
+
+        @keyframes bounceColorSize {
+
+            0%,
+            100% {
+                transform: translateY(0);
+                color: black;
+                font-size: 2rem;
+
+            }
+
+            50% {
+                transform: translateY(-15px);
+                color: #ff2680;
+                font-size: 2.5rem;
+
+            }
+        }
+
+        .animate-bounce-color-size {
+            animation: bounceColorSize 1s ease-in-out infinite;
+            transition: color 0.5s ease, font-size 0.5s ease;
+        }
+
+        /* Hover effects */
+        .animate-bounce-color-size:hover {
+            color: #ff2680;
+            font-size: 2.5rem;
+        }
     </style>
 </head>
 
 <body>
 
     <!-- header section -->
-    <header class="font-sora bg-[#FFF9F4] flex justify-center ">
+    <header class="font-sora bg-[#FFF9F4] ">
         <!-- navbar section -->
 
         <!-- navbar main container -->
         <div
-            class="navbar flex justify-between md:justify-around lg:justify-around items-center border-2 border-y-gray-300  mx-auto">
+            class="navbar flex justify-between md:justify-between lg:justify-between items-center   mx-auto max-w-screen-2xl">
 
             <!-- navbar icon section left -->
             <div>
@@ -83,7 +118,7 @@
                 <div>
                     <button class="border-[#FFDC26] border-2 rounded-md px-8 py-2 ">Login</button>
 
-                    <button class="bg-[#FFDC26] rounded-md px-8 py-2 ">Register</button>
+                    <button class="border-[#FFDC26] border-2 bg-[#FFDC26] rounded-md px-8 py-2 ">Register</button>
                 </div>
             </div>
 
@@ -97,15 +132,34 @@
                     </svg>
                 </button>
             </div>
-
         </div>
-
     </header>
 
 
     <!-- main section -->
     <main>
+        <!-- Banner Section -->
+        <section class="max-w-screen-2xl mx-auto 
+        bg-image1 h-[750px] bg-no-repeat bg-right bg-contain my-8 md:my-14 lg:my-20">
+            <!-- banner texts -->
+            <div class="space-y-4 flex flex-col items-start mx-2">
+                <h1 class="font-AD text-3xl md:text-5xl lg:text-6xl animate-text animate-bounce animate-ease-linear ">
+                    Pamper Your Pet,<br> Because They
+                    Deserve the Best</h1>
+                <p class="font-sora text-base md:text-lg lg:text-xl">Discover a world of treats, toys, and essentials
+                    handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+                <button
+                    class="font-sora text-sm md:text-lg lg:text-xl border-[#FFDC26] border-2 bg-[#FFDC26] rounded-md px-6 py-1 ">Find
+                    a pet</button>
+            </div>
 
+            <!-- banner background Image section -->
+
+            <!-- <div class="border-2 border-red-500 flex items-end">
+                <img src="./images/cat-big.png" alt="">
+            </div> -->
+
+        </section>
     </main>
 
 
