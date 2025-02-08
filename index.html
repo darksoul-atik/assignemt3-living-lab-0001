@@ -13,7 +13,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+        html {
+            overflow-y: auto;
+            scrollbar-width: none;
+
+        }
+
+        html::-webkit-scrollbar {
+            display: none;
+
+        }
+
         .font-sora {
             font-family: "Sora", serif;
         }
@@ -36,13 +50,7 @@
             background-image: url(./images/cute-pet-mid.png);
             background-repeat: no-repeat;
             background-position: bottom right;
-
-
-
-        }
-
-        .bg-image2 img {
-            width: 50%;
+            background-size: auto 70%;
         }
     </style>
 </head>
@@ -128,7 +136,7 @@
     <main>
 
         <!-- Banner Section -->
-        <section class="mb-[-250px] lg:mb-[180px] max-w-screen-2xl mx-auto 
+        <section class="mb-[-16rem] lg:mb-[11.25rem] max-w-screen-2xl mx-auto 
         bg-image1 h-[750px] bg-no-repeat bg-right bg-contain my-8 md:my-14 lg:my-20 ">
             <!-- banner texts -->
             <div class="space-y-4 flex flex-col items-start mx-2">
@@ -150,14 +158,15 @@
             <h1 class="font-AD lg:text-4xl md:text-2xl text-xl mx-2">Browse By Categories</h1>
 
             <!-- catagories content container -->
-            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 lg:mt-12 md:mt-10 md:mx-2 mt-4 gap-2 mx-2 ">
+            <div
+                class="grid grid-cols-2 md:grid-cols-6 lg:grid-cols-6 lg:mt-12 md:mt-10 md:ml-5 md:justify-between mt-4 gap-4 mx-2 ">
 
 
                 <!-- catagories card section -->
 
                 <!-- card1 -->
                 <div class="bg-[#F9DF8A] flex flex-col items-center py-5 rounded-lg 
-                lg:w-5/6 gap-10 h-[222px] ">
+                 gap-10 h-[222px] ">
 
                     <!-- card image section -->
                     <div class="  bg-white rounded-full ">
@@ -173,7 +182,7 @@
                 </div>
                 <!-- card2 -->
                 <div class="bg-[#F9DF8A] flex flex-col items-center py-5 rounded-lg 
-                lg:w-5/6 gap-10 h-[222px] ">
+                 gap-10 h-[222px] ">
 
                     <!-- card image section -->
                     <div class="  bg-white rounded-full ">
@@ -189,7 +198,7 @@
                 </div>
                 <!-- card3 -->
                 <div class="bg-[#F9DF8A] flex flex-col items-center py-5 rounded-lg 
-                lg:w-5/6 gap-10 h-[222px] ">
+                 gap-10 h-[222px] ">
 
                     <!-- card image section -->
                     <div class="  bg-white rounded-full ">
@@ -205,7 +214,7 @@
                 </div>
                 <!-- card4 -->
                 <div class="bg-[#F9DF8A] flex flex-col items-center py-5 rounded-lg 
-                lg:w-5/6 gap-10 h-[222px] ">
+                 gap-10 h-[222px] ">
 
                     <!-- card image section -->
                     <div class="  bg-white rounded-full ">
@@ -221,7 +230,7 @@
                 </div>
                 <!-- card5 -->
                 <div class="bg-[#F9DF8A] flex flex-col items-center py-5 rounded-lg 
-                lg:w-5/6 gap-10 h-[222px] ">
+                 gap-10 h-[222px] ">
 
                     <!-- card image section -->
                     <div class="  bg-white rounded-full ">
@@ -237,7 +246,7 @@
                 </div>
                 <!-- card6 -->
                 <div class="bg-[#F9DF8A] flex flex-col items-center py-5 rounded-lg 
-                lg:w-5/6 gap-10 h-[222px] ">
+                 gap-10 h-[222px] ">
 
                     <!-- card image section -->
                     <div class="  bg-white rounded-full ">
@@ -258,70 +267,322 @@
 
         </section>
 
+
+        <!--**************** responsive above************ -->
+
         <!-- catagories section 2 -->
-        <section class="lg:bg-[#FFF9F4] md:bg-[#FFF9F4]">
+        <section class="lg:bg-[#FFF9F4]  h-[757px] ">
+
 
             <!-- main container -->
-            <div class=" mb-4 max-w-screen-2xl mx-auto md:mx-auto lg:mx-auto lg:pt-24 md:pt-20  ">
+
+            <div class=" max-w-screen-2xl pt-2 lg:mx-auto">
 
                 <!-- catagories header -->
 
-                <h1 class="font-AD hidden md:flex lg:flex lg:text-4xl md:text-2xl text-xl border-1">Trending Pet
+                <h1
+                    class="font-AD hidden md:flex lg:flex lg:text-4xl md:text-2xl text-xl  lg:mt-32 lg:mb-12 md:mt-16 md:mb-8 md:ml-2  ">
+                    Trending Pet
                     Products
                 </h1>
 
-                <h1 class="font-AD flex md:hidden lg:hidden lg:text-4xl md:text-2xl text-xl mx-2">Browse By Catagories
+                <h1 class="font-AD mb-4 flex md:hidden lg:hidden lg:text-4xl md:text-2xl text-xl mx-2">Browse By
+                    Catagories
                 </h1>
 
 
+                <!-- products container -->
+                <div
+                    class=" max-w-screen-2xl  lg:mx-auto md:flex flex flex-col  md:flex-col lg:flex-row lg:gap-16 gap-6 md:gap-10 mb-36">
 
-                <!-- catagories content container -->
+                    <!-- feature container -->
+                    <div class="lg:w-2/5 md:w-3/5 md:mx-auto  bg-[#F9DF8A] h-[402px]  py-8 px-8 bg-image2 rounded-lg">
 
-                <div class="flex lg:gap-6 lg:pt-12 ">
+                        <!-- text area -->
 
-                    <!-- feature card -->
-
-                    <div class="bg-[#F9DF8A] lg:h-[25rem] lg:w-[29rem]
-                    border-2 border-red-600 flex-4  ">
-
-                        <!-- feature text section -->
-                        <div class="flex flex-col items-start lg:gap-5 px-5 py-5">
-                            <h1 class="font-AD lg:text-4xl">T-Shirt For Dogs</h1>
-                            <p class="font-sora lg:text-base">Discover a world of treats,toys, and <br>
-                                essentials handpicked for
-                            </p>
-                            <button
-                                class="font-sora lg:text-xl btn btn-active btn-primary bg-white border-white text-black font-semibold hover:bg-yellow-300 hover:border-yellow-300">Shop
-                                Now</button>
+                        <div class="flex flex-col items-start gap-2 lg:gap-4">
+                            <h1 class="font-AD text-xl lg:text-4xl">T-Shirt For Dogs</h1>
+                            <p class="font-sora text-sm lg:text-xl">Discover a world of treats,toys,and <br>essentials
+                                handpicked for</p>
+                            <button class="font-sora btn px-8">Shop Now</button>
                         </div>
 
-                        <!-- feature image section -->
-                        <div class="relative -top-25 left-55">
-                            <div class="-mb-10">
-                                <img class="h-72" src="./images/cute-pet-mid.png" alt="">
+
+                    </div>
+
+                    <!-- shop container -->
+                    <div
+                        class="lg:w-3/5 md:w-4/5 md:mx-auto h-[402px] grid lg:grid-cols-3 grid-cols-2 gap-4 bg-[#FFFAFA] py-10 ">
+
+                        <!-- Shop card container -->
+
+                        <!-- card1 -->
+                        <div
+                            class="bg-[#ffffff] shadow-md lg:h-[120px] h-20px rounded-lg  flex items-center gap-4 px-4 py-2">
+                            <!-- shop card image  -->
+                            <div
+                                class=" lg:w-21 lg:h-21 w-18 h-17 flex justify-center items-center bg-[#FFF9F4] rounded">
+                                <img src="./images/dog-cartoon.png" alt="dog">
+                            </div>
+
+
+                            <!-- shop card info -->
+                            <div>
+                                <!-- rating -->
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                                    <p class="font-sora">4.5</p>
+                                </div>
+
+                                <!-- info -->
+                                <div class="flex flex-col ">
+                                    <h6 class="font-AD">Pet Bed</h6>
+                                    <p class="font-sora text-sm font-semibold">$39.99</p>
+                                </div>
+
                             </div>
 
                         </div>
 
 
-                    </div>
+                        <!-- card2 -->
+                        <div
+                            class="bg-[#ffffff] shadow-md lg:h-[120px] h-20px rounded-lg flex items-center gap-4 px-4 py-2">
+                            <!-- shop card image  -->
+                            <div
+                                class=" lg:w-21 lg:h-21 w-18 h-17 flex justify-center items-center bg-[#FFF9F4] rounded">
+                                <img src="./images/fish-cartoon.png" alt="Fish">
+                            </div>
 
 
-                    <!-- shop section -->
-                    <div class="grid lg:grid-cols-3 lg:h-[400px] lg:w-[1050px] lg:gap-4 border-2 border-green-800 
-                     ">
+                            <!-- shop card info -->
+                            <div>
+                                <!-- rating -->
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                                    <p class="font-sora">4.2</p>
+                                </div>
 
-                        <div class="bg-white lg:w-[335px] lg:h-[118px]  rounded-lg shadow-sm">
+                                <!-- info -->
+                                <div class="flex flex-col ">
+                                    <h6 class="font-AD">Fish Bowl</h6>
+                                    <p class="font-sora text-sm font-semibold">$89.99</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- card3 -->
+                        <div
+                            class="bg-[#ffffff] lg:h-[120px] h-20px rounded-lg shadow-md flex items-center gap-4 px-4 py-2">
+                            <!-- shop card image  -->
+                            <div
+                                class=" lg:w-21 lg:h-21 w-18 h-17 flex justify-center items-center bg-[#FFF9F4] rounded">
+                                <img src="./images/dog-cartoon.png" alt="dog">
+                            </div>
+
+
+                            <!-- shop card info -->
+                            <div>
+                                <!-- rating -->
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                                    <p class="font-sora">4.6</p>
+                                </div>
+
+                                <!-- info -->
+                                <div class="flex flex-col ">
+                                    <h6 class="font-AD">Dog Food</h6>
+                                    <p class="font-sora text-sm font-semibold">$29.99</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- card4 -->
+                        <div
+                            class="bg-[#ffffff] lg:h-[120px] h-20px rounded-lg shadow-md flex items-center gap-4 px-4 py-2">
+                            <!-- shop card image  -->
+                            <div
+                                class=" lg:w-21 lg:h-21 w-18 h-17 flex justify-center items-center bg-[#FFF9F4] rounded">
+                                <img src="./images/rabbit-cartoon.png" alt="">
+                            </div>
+
+
+                            <!-- shop card info -->
+                            <div>
+                                <!-- rating -->
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                                    <p class="font-sora">4.8</p>
+                                </div>
+
+                                <!-- info -->
+                                <div class="flex flex-col ">
+                                    <h6 class="font-AD">Rabbit</h6>
+                                    <p class="font-sora text-sm font-semibold">$39.99</p>
+                                </div>
+
+                            </div>
+
                         </div>
 
 
 
+                        <!-- card5 -->
+                        <div
+                            class="bg-[#ffffff] lg:h-[120px] h-20px rounded-lg shadow-md flex items-center gap-4 px-4 py-2">
+                            <!-- shop card image  -->
+                            <div
+                                class=" lg:w-21 lg:h-21 w-18 h-17 flex justify-center items-center bg-[#FFF9F4] rounded">
+                                <img src="./images/pet-couch.png" alt="">
+                            </div>
 
 
+                            <!-- shop card info -->
+                            <div>
+                                <!-- rating -->
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                                    <p class="font-sora">4.5</p>
+                                </div>
+
+                                <!-- info -->
+                                <div class="flex flex-col ">
+                                    <h6 class="font-AD">Bird Bed</h6>
+                                    <p class="font-sora text-sm font-semibold">$59.99</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- card6 -->
+                        <div
+                            class="bg-[#ffffff] lg:h-[120px] h-20px rounded-lg shadow-md flex items-center gap-4 px-4 py-2">
+                            <!-- shop card image  -->
+                            <div
+                                class=" lg:w-21 lg:h-21 w-18 h-17 flex justify-center items-center bg-[#FFF9F4] rounded">
+                                <img src="./images/bird-cartoon.png" alt="">
+                            </div>
+
+
+                            <!-- shop card info -->
+                            <div>
+                                <!-- rating -->
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                                    <p class="font-sora">4.5</p>
+                                </div>
+
+                                <!-- info -->
+                                <div class="flex flex-col ">
+                                    <h6 class="font-AD">Bird Cage</h6>
+                                    <p class="font-sora text-sm font-semibold">$39.99</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- card7 -->
+                        <div
+                            class="bg-[#ffffff] lg:h-[120px] h-20px rounded-lg shadow-md flex items-center gap-4 px-4 py-2">
+                            <!-- shop card image  -->
+                            <div
+                                class=" lg:w-21 lg:h-21 w-18 h-17 flex justify-center items-center bg-[#FFF9F4] rounded">
+                                <img src="./images/bird-cartoon.png" alt="">
+                            </div>
+
+
+                            <!-- shop card info -->
+                            <div>
+                                <!-- rating -->
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                                    <p class="font-sora">4.1</p>
+                                </div>
+
+                                <!-- info -->
+                                <div class="flex flex-col ">
+                                    <h6 class="font-AD">Bird Food</h6>
+                                    <p class="font-sora text-sm font-semibold">$69.99</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- card8 -->
+                        <div
+                            class="bg-[#ffffff] lg:h-[120px] h-20px rounded-lg shadow-md flex items-center gap-4 px-4 py-2">
+                            <!-- shop card image  -->
+                            <div
+                                class=" lg:w-21 lg:h-21 w-18 h-17 flex justify-center items-center bg-[#FFF9F4] rounded">
+                                <img src="./images/fish-cartoon.png" alt="">
+                            </div>
+
+
+                            <!-- shop card info -->
+                            <div>
+                                <!-- rating -->
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                                    <p class="font-sora">4.9</p>
+                                </div>
+
+                                <!-- info -->
+                                <div class="flex flex-col ">
+                                    <h6 class="font-AD">Fish Food</h6>
+                                    <p class="font-sora text-sm font-semibold">$89.99</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- this card is hidden in small device -->
+                        <!-- card9 -->
+                        <div
+                            class="bg-[#ffffff] lg:h-[120px] h-20px rounded-lg shadow-md lg:flex items-center gap-4 px-4 py-2 hidden">
+                            <!-- shop card image  -->
+                            <div
+                                class=" lg:w-21 lg:h-21 w-18 h-17 flex justify-center items-center bg-[#FFF9F4] rounded">
+                                <img src="./images/pet-couch.png" alt="">
+                            </div>
+
+
+                            <!-- shop card info -->
+                            <div>
+                                <!-- rating -->
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                                    <p class="font-sora">4.4</p>
+                                </div>
+
+                                <!-- info -->
+                                <div class="flex flex-col ">
+                                    <h6 class="font-AD">Rabbit Cage</h6>
+                                    <p class="font-sora text-sm font-semibold">$39.99</p>
+                                </div>
+
+                            </div>
+
+                        </div>
 
 
 
                     </div>
+
+
+
 
 
 
@@ -331,21 +592,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            </div>
         </section>
 
 
