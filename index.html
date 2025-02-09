@@ -52,6 +52,36 @@
             background-position: bottom right;
             background-size: auto 70%;
         }
+
+        @keyframes moveInfinite {
+            0% {
+                transform: translateX(20);
+                margin-right: 100px;
+            }
+
+            50% {
+                transform: translateX(-10%);
+                margin-right: 100px;
+            }
+
+            100% {
+                transform: translateX(100);
+                margin-right: 100px;
+            }
+        }
+
+        .animate-move-infinite {
+            animation: moveInfinite 2s ease-in-out infinite;
+        }
+
+        @media (min-width: 1024px) {
+            .lg\:animate-move-infinite {
+                display: flex;
+                animation: moveInfinite 12s linear infinite;
+
+            }
+
+        }
     </style>
 </head>
 
@@ -600,8 +630,11 @@
         <section>
 
             <!-- main section -->
+
+            <!-- review card container -->
             <section
-                class="max-w-screen-2xl mx-auto mt-64 lg:mt-10 lg:mb-10 flex lg:flex-row md:flex-col md:mt-96 flex-col gap-12">
+                class="max-w-screen-2xl mx-auto mt-64 lg:mt-10 lg:mb-10 flex lg:flex-row md:flex-col md:mt-96 flex-col gap-12 lg:animate-move-infinite">
+
                 <!-- review card 1 -->
                 <div class="card flex flex-col md:flex-col lg:card-side bg-base-100 shadow-xl">
                     <!-- review card image container -->
@@ -657,6 +690,10 @@
                         </div>
                     </div>
                 </div>
+
+
+
+
             </section>
 
             <!-- pagination section -->
@@ -689,6 +726,8 @@
 
             </div>
         </section>
+
+
 
 
 
