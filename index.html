@@ -71,6 +71,9 @@
 
 
         /* Animation Section */
+
+        /* For Review section */
+
         @keyframes moveInfinite {
             0% {
                 transform: translateX(20);
@@ -99,6 +102,54 @@
 
             }
 
+        }
+
+        /* for banner section */
+
+        @keyframes moveInfinite2 {
+            0% {
+                transform: translateX(20);
+                margin-right: 100px;
+            }
+
+            50% {
+                transform: translateX(-10%);
+                margin-right: 100px;
+            }
+
+            100% {
+                transform: translateX(100);
+                margin-right: 100px;
+            }
+        }
+
+
+
+        @keyframes textChange {
+
+            0%,
+            45% {
+                content: "Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!";
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+
+            }
+
+            55%,
+            100% {
+                content: "Give your pet the ultimate treat and get warm furry love!";
+                opacity: 1;
+
+            }
+        }
+
+        .animate-text-change::after {
+            content: "Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!";
+            animation: textChange 5s infinite alternate ease-in-out;
+            transition: opacity 1s ease-in-out;
         }
     </style>
 </head>
@@ -188,12 +239,18 @@
         <section class="mb-[-16rem] lg:mb-[11.25rem] max-w-screen-2xl mx-auto 
         bg-image1 h-[750px] bg-no-repeat bg-right bg-contain my-8 md:my-14 lg:my-20 ">
             <!-- banner texts -->
+
             <div class="space-y-4 flex flex-col items-start mx-2">
-                <h1 class="font-AD text-3xl md:text-5xl lg:text-6xl animate-text animate-bounce animate-ease-linear  ">
+                <h1
+                    class="font-AD text-3xl md:text-5xl lg:text-6xl animate-text animate-bounce animate-ease-linear animate-fade">
                     Pamper Your Pet,<br> Because They
-                    Deserve the Best</h1>
-                <p class="font-sora text-base md:text-lg lg:text-xl">Discover a world of treats, toys, and essentials
-                    handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+                    Deserve the Best
+                </h1>
+
+                <p class="font-sora text-base md:text-lg lg:text-xl max-sm:hidden animate-text-change"></p>
+
+                <p class="font-sora text-base md:text-lg lg:text-xl lg:hidden md:hidden ">Discover a world of treats,
+                    toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
                 <button
                     class="font-sora text-sm md:text-lg lg:text-xl border-[#FFDC26] border-2 bg-[#FFDC26] rounded-md px-6 py-2 hover:bg-gray-300 ">Find
                     a pet</button>
@@ -351,7 +408,7 @@
                             <h1 class="font-AD text-xl lg:text-4xl">T-Shirt For Dogs</h1>
                             <p class="font-sora text-sm lg:text-xl">Discover a world of treats,toys,and <br>essentials
                                 handpicked for</p>
-                            <button class="font-sora btn px-8">Shop Now</button>
+                            <button class="font-sora btn px-8 bg-white">Shop Now</button>
                         </div>
 
 
